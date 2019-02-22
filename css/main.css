@@ -7,7 +7,7 @@
   font-size: 80%;
   padding: 0.75rem;
   color: #64a19d;
-  border: 1px solid #64a19d;
+  border: 1px solid #fff;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -90,6 +90,10 @@
   }
 }
 
+h1, h2, h3, h4{
+  font-family: Crimson, serif;
+}
+
 /*Video Styles*/
 header {
   position: relative;
@@ -145,7 +149,7 @@ header .overlay {
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  font: normal 400 20px/1 'Sarabun', sans-serif;
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
@@ -267,8 +271,7 @@ header .overlay {
 
 .main-idea-section {
   padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background: #fff;
 }
 
 .main-idea-section p {
@@ -341,8 +344,7 @@ header .overlay {
 
 .science-section {
   padding: 10rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-science.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-science.jpg");
+  background: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -419,7 +421,7 @@ a:focus, a:hover {
   color: #3c6360;
 }
 
-.bg-black {
+/*.bg-black {
   background-color: #161616 !important;
 }
 
@@ -430,6 +432,7 @@ a:focus, a:hover {
 .text-primary {
   color: #64a19d !important;
 }
+*/
 
 footer {
   padding: 5rem 0;

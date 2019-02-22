@@ -11,7 +11,10 @@
   <title>The Search for Sasquatch</title>
 
   <!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+
+  <!--Mapbox style-->
+  <link rel="stylesheet" href="css/map.css">
 
   <!--Custom Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Sarabun" rel="stylesheet">
@@ -77,8 +80,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Main Idea</h2>
-          <p class="text-white-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          <h2 class="mb-4">Main Idea</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
             it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         </div>
@@ -92,8 +95,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Main Idea - Extended</h2>
-          <p class="text-white-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          <h2 class="mb-4">Main Idea - Extended</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
             it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         </div>
@@ -102,12 +105,24 @@
     </div>
   </section>
 
+  <!--Mapbox Starts here-->
+  <section id="main-idea" class="main-idea-section text-center">
+    <div class="container">
+      <div class="row">
+          <div id="map"></div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
   <!-- Moody Section -->
   <section id="moody" class="moody-section bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="text-white mb-4">Woody</h2>
+          <h2 class="mb-4">Woody</h2>
 
         </div>
       </div>
@@ -134,7 +149,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="text-white mb-4">Witnesses</h2>
+          <h2 class="mb-4">Witnesses</h2>
 
         </div>
       </div>
@@ -148,8 +163,8 @@
           <div class="bg-black text-center h-100 witness">
             <div class="d-flex h-100">
               <div class="witness-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Witness 1</h4>
-                <p class="mb-0 text-white-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                <h4>Witness 1</h4>
+                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                   scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
                   containing Lorem Ipsum passages, and more recently with desktop publishing.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
@@ -168,8 +183,8 @@
           <div class="bg-black text-center h-100 witness">
             <div class="d-flex h-100">
               <div class="witness-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Witness 2</h4>
-                <p class="mb-0 text-white-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                <h4>Witness 2</h4>
+                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                   scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
                   containing Lorem Ipsum passages, and more recently with desktop publishing</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
@@ -186,7 +201,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="text-white mb-4">Where is Science Now?</h2>
+          <h2 class="mb-4">Where is Science Now?</h2>
         </div>
       </div>
 
@@ -230,14 +245,16 @@
 
 
       </div>
-  </section><!--End of Science-->
+  </section>
+  <!--End of Science-->
 
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
       Copyright &copy; Soul of Athens 2019
     </div>
-  </footer><!-- Bootstrap core JavaScript -->
+  </footer>
+  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -250,6 +267,142 @@
 
   <!--Scroll-->
   <script src="js/scroll.js"></script>
+
+  <!-- Mapbox GL -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.50.0/mapbox-gl.js'></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    // SIGN UP FOR YOUR OWN MAPBOX ACCESS TOKEN!
+    // https://www.mapbox.com/signup/
+
+    // KATI'S MAPBOX ACCESS TOKEN
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia2F0aXNzIiwiYSI6ImNqbnZ1OTF1MjBqZ2ozcXJ3bGVjOWt5emQifQ.PhQCwXX8SbSG835DeKol2Q';
+
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/katiss/cjrtdcqnv058m2snx87q8pvly',
+      center: [-82.372641, 40.210250],
+      zoom: 6.0
+    });
+
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+    // array of data objects for the locations
+    var locations = [{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          // location
+          "coordinates": [-81.867130, 39.336550]
+        },
+        "properties": {
+          // label
+          "title": "Haga Ridge",
+          // icon name
+          "icon": "squatchfoot"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-84.134956, 39.019371]
+        },
+        "properties": {
+          "title": "East Fork State Park",
+          "icon": "squatchfoot"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.900092, 40.080627]
+        },
+        "properties": {
+          "title": "St. Clairsville",
+          "icon": "a"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-118.24445541498162, 34.03142575184479]
+        },
+        "properties": {
+          "title": "Los Angeles",
+          "icon": "a"
+        }
+      }
+    ];
+
+    map.on('load', function() {
+
+      // show lat, lng for clicked location in console
+      map.on('click', function(e) {
+        console.log('map zoom', map.getZoom());
+        console.log('map center', map.getCenter().lng + ', ' + map.getCenter().lat);
+        console.log('click loc', e.lngLat.lng + ', ' + e.lngLat.lat);
+      });
+
+      // add geojson layer and style layout for the location icons
+      map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+          "type": "geojson",
+          "data": {
+            "type": "FeatureCollection",
+            "features": locations
+          }
+        },
+        "layout": {
+          "icon-image": "{icon}-15",
+          "icon-size": 1.5,
+          "text-field": "{title}",
+          "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+          "text-offset": [0, 0.8],
+          "text-anchor": "top"
+        }
+      });
+    });
+
+    // activate the buttons to fly to locations
+    $('#btn1').click(function() {
+      map.flyTo({
+        center: [-81.867130, 39.3365506],
+        zoom: 10
+      });
+    });
+
+    $('#btn2').click(function() {
+      map.flyTo({
+        center: [-84.134956, 39.019371],
+        zoom: 12,
+        curve: 0.9, // default curve is 1.42
+        speed: 1.0 // default speed is 1.2
+      });
+    });
+
+    $('#btn3').click(function() {
+      map.flyTo({
+        center: [-80.900092, 40.080627],
+        zoom: 12,
+        curve: 0.9,
+        speed: 1.0
+      });
+    });
+
+    $('#btn4').click(function() {
+      map.flyTo({
+        center: [-82.372641, 40.210250],
+        zoom: 6.0
+      });
+    });
+  </script>
 
 </body>
 
