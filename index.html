@@ -26,6 +26,12 @@
 </head>
 
 <body id="page-top">
+  <!--progress bar starts here -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <!--Progess bar ends here-->
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -38,7 +44,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#main-idea">Link A</a>
+            <a class="nav-link js-scroll-trigger" href="#main-idea">Link 1</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#moody">Link 2</a>
@@ -62,7 +68,7 @@
       <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
           <h1 class="display-3">The Search for Sasquatch</h1>
-          <p class="lead mb-0">Lorem Ipsum</p>
+          <p class="lead mb-0">exploring the undiscovered</p>
         </div>
       </div>
     </div>
@@ -76,53 +82,61 @@
   </header>
 
   <!--Main Idea -->
-  <section id="main-idea" class="main-idea-section text-center">
+  <section id="main-idea" class="main-idea-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="mb-4">Main Idea</h2>
+          <h2 class="mb-4 text-center">Main Idea</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
             it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         </div>
       </div>
-      <img src="img/placeholder_01.jpg" class="img-fluid" alt="">
+      <div class="text-center">
+        <img src="img/placeholder_01.jpg" class="img-fluid" alt="">
+      </div>
     </div>
   </section>
 
   <!--Main Idea Extended -->
-  <section id="main-idea" class="main-idea-section text-center">
+  <section id="main-idea" class="main-idea-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="mb-4">Main Idea - Extended</h2>
+          <h2 class="mb-4 text-center">Main Idea - Extended</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
             it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         </div>
       </div>
-      <img src="img/placeholder_01.jpg" class="img-fluid" alt="">
+      <div class="text-center">
+        <img src="img/placeholder_01.jpg" class="img-fluid" alt="">
+      </div>
     </div>
   </section>
 
-  <!--Mapbox Starts here-->
-  <section id="main-idea" class="main-idea-section text-center">
+  <!--MAPBOX container -->
+  <section id="main-idea" class="main-idea-section">
     <div class="container">
       <div class="row">
-          <div id="map"></div>
+        <div class="col-lg-8 mx-auto">
+          <h2 class="mb-4 text-center">Map</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         </div>
       </div>
-
-
+      <div id="map"></div>
     </div>
   </section>
+
 
   <!-- Moody Section -->
   <section id="moody" class="moody-section bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="mb-4">Woody</h2>
+          <h2 class="mb-4">Moody</h2>
 
         </div>
       </div>
@@ -140,8 +154,13 @@
               containing Lorem Ipsum passages, and more recently with desktop publishing</p>
           </div>
         </div>
-      </div>
+        <div class="col-xl-8 mx-auto">
+          <p class="text-black-50 mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing</p>
 
+        </div>
+      </div>
   </section>
 
   <!-- witness Section -->
@@ -267,6 +286,24 @@
 
   <!--Scroll-->
   <script src="js/scroll.js"></script>
+
+  <!--progress bar scripts-->
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+
+
+
 
   <!-- Mapbox GL -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.50.0/mapbox-gl.js'></script>
